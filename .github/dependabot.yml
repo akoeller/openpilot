@@ -9,4 +9,14 @@ updates:
     directory: "/"
     # Check for updates once a week
     schedule:
-      interval: "secondly"
+      interval: "daily"
+      time: "09:00"
+      timezone: "Europe/Berlin"
+   # Enable version updates for pip
+  - package-ecosystem: "pip"
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Europe/Berlin"
